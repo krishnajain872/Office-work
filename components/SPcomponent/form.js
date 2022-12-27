@@ -13,9 +13,9 @@ const handleContinue = (e) => {
     e.preventDefault()
     const brand = brandRef.current?.getValue()[0]?.value
     const model = modelRef.current?.getValue()[0]?.value
-    const invoice_amount = colorRef.current?.getValue()[0]?.value
-    const purchase = issuesRef.current?.getValue()
-    const deviceIMEI  = timeSlotRef.current?.getValue()[0]?.value
+    const invoice_amount = invoiceRef.current?.getValue()[0]?.value
+    const purchase = purchaseRef.current?.getValue()
+    const deviceIMEI  = IMEIRef.current?.getValue()[0]?.value
 }
 
 const children = (<> 
@@ -27,9 +27,9 @@ const children = (<>
           <div className="grid grid-cols-12 gap-4 mb-8 traplace">
             <div className="col-span-12 md:col-span-6 multiseletform">
               <Creatable
-                ref=""  
-                options="{mobiles.map(({ name }) => ({ value: name, label: name }))}"
-                // onChange={({ value }) => { (setBrandModel(mobiles.find((m) => m.name == value)?.models?.map((name) => ({ value: name, label: name })))) }}
+                ref={brandRef} 
+                options="mi"
+                onChange={({ value }) => { (setBrandModel("mi")) }}
                 placeholder="Select Brand"
                 className="book-form-container"
                 classNamePrefix="book-form"
@@ -37,40 +37,37 @@ const children = (<>
             </div>
             <div className="col-span-12 md:col-span-6 multiseletform">
               <Creatable
-                ref=''
-                options=''
+                ref={modelRef}
+                options="qwedc21"
                 placeholder="Select Model"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
             </div>
-            <div className="col-span-12 multiseletform">
-              <Select
-                ref=''
-                options=''
-                placeholder="Select Color"
+            
+            <div className="col-span-12 md:col-span-12 multiseletform">
+              <Creatable
+                ref={invoiceRef}
+                options= '234r23fwef'
+                placeholder="Issue with Device"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
             </div>
             <div className="col-span-12 md:col-span-12 multiseletform">
               <Creatable
-                ref=''
-                options= ''
-                isMulti
+                ref={purchaseRef}
+                options= '234r23fwef'
                 placeholder="Issue with Device"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
             </div>
-            <div className="col-span-12 md:col-span-6 multiseletform relative">
-              {/* <input type="date" name="" className="w-full black-glass-repair" id="" /> */}
-              {/* <DatePicker selected='' placeholderText="Enter Date" className="w-full black-glass-repair" onChange={(date = new Date()) => setStartDate(date)} minDate={minDate} maxDate={maxDate} excludeDates={[new Date("Dec 26, 2022")]}  dateFormat="MMMM d, yyyy"  /> */}
-            </div>
+          
             <div className="col-span-12 md:col-span-6 multiseletform">
               <Select
-                ref=""
-                // options={timeSlots.map(({ slot, _id }) => ({ value: _id, label: slot }))}
+                ref={IMEIRef}
+                options="EFB@!#&(HD@("
                 placeholder="Select Time"
                 className="book-form-container"
                 classNamePrefix="book-form"
@@ -133,7 +130,7 @@ export default function ScreenprotectionFormLayout() {
               </div>
             </div>
             <div className="col-span-12 xl:col-span-9 lg:col-span-8 white-glass-repair py-6 md:py-16 px-6 rounded-xl stop_at_point">
-              <div>{children}</div>
+              {/* <div>{children}</div> */}
             </div>
           </div>
         </div>
