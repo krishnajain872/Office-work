@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Green",
+        "hex_code": "#394C38"
+    },
+    {
+        "name": "Dark Grey",
+        "hex_code": "#262626"
+    },
+    {
+        "name": "Blue",
+        "hex_code": "#3C4870"
+    },
+    {
+        "name": "Black",
+        "hex_code": "#000000"
+    },
+    {
+        "name": "White",
+        "hex_code": "#FFFFFF"
+    },
+    {
+        "name": "Gold",
+        "hex_code": "#F1E5AC"
+    },
+    {
+        "name": "Rose Gold",
+        "hex_code": "#B76E79"
+    },
+    {
+        "name": "Silver",
+        "hex_code": "#C0C0C0"
+    },
+    {
+        "name": "Red",
+        "hex_code": "#FF0000"
+    }
+]

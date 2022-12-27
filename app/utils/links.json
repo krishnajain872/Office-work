@@ -1,0 +1,7 @@
+[
+    { "name": "Home", "href": "/", "icon": "/mobile_icons/home.webp", "type": "base", "nameMobile": "Home" },
+    { "name": "About", "href": "/about", "icon": "/mobile_icons/about.webp", "type": "info", "nameMobile": "About" },
+    { "name": "Screen Protection", "href": "/screen-protection", "icon": "/mobile_icons/plan.webp", "type": "service", "nameMobile": "Plan" },
+    { "name": "Blog", "href": "/blogs", "icon": "/mobile_icons/blog.webp", "type": "info", "nameMobile": "Blog" },
+    { "name": "Book A Repair", "href": "/book-a-repair", "icon": "/mobile_icons/repair.webp", "type": "service", "nameMobile": "Repair" }
+  ]
