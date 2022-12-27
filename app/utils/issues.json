@@ -1,0 +1,62 @@
+[
+    {
+        "disabled": false,
+        "name": "Screen problem"
+    },
+    {
+        "disabled": false,
+        "name": "Touch problem"
+    },
+    {
+        "disabled": false,
+        "name": "Charging problem"
+    },
+    {
+        "disabled": false,
+        "name": "Mic problem"
+    },
+    {
+        "disabled": false,
+        "name": "Battery problem"
+    },
+    {
+        "disabled": false,
+        "name": "Receiver problem"
+    },
+    {
+        "disabled": false,
+        "name": "Speaker problem"
+    },
+    {
+        "disabled": false,
+        "name": "Camera problem"
+    },
+    {
+        "disabled": false,
+        "name": "Sensor problem"
+    },
+    {
+        "disabled": false,
+        "name": "Software problem"
+    },
+    {
+        "disabled": false,
+        "name": "Heating problem"
+    },
+    {
+        "disabled": false,
+        "name": "Motherboard problem"
+    },
+    {
+        "disabled": false,
+        "name": "Network problem"
+    },
+    {
+        "disabled": false,
+        "name": "Fingerprint problem"
+    },
+    {
+        "disabled": false,
+        "name": "Aux jack problem"
+    }
+]

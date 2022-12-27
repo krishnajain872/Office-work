@@ -1,0 +1,14 @@
+[
+    {
+        "slot": "09:00AM - 01:00PM",
+        "disabled": false
+    },
+    {
+        "slot": "01:00PM - 04:00PM",
+        "disabled": false
+    },
+    {
+        "slot": "04:00 PM - 07:00 PM",
+        "disabled": false
+    }
+]
