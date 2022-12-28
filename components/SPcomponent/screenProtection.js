@@ -1,16 +1,15 @@
 
 import React, { useState } from "react";
 import { Router, useRouter } from "next/router";
-
-
-
+import Link from "next/link";
+// const router = useRouter();
+import screenprotectionform from "./screenprotectionform";
 const steps = [
-    { link: '/screen-protection/form', name: "Detail section" },
-    
+    { link: '/screen-protection/form', name: "Form" },
   ]
   
 
-export default function ScreenProtection() {
+export default function ScreenProtectioncomp() {
   return (
     <>
       <div className="grid grid-cols-2 m-14 justify-items-center ">
@@ -66,7 +65,8 @@ export default function ScreenProtection() {
                 </div>
               </div>
             </div>
-            <button className="brand-btn mt-14 relative right-10 " onClick={() => router.push('/screen-protection/form')}>
+            <Link href='/screenprotectionform'>
+            <button className="brand-btn mt-14 relative right-10 "  >
             See Details
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,14 +75,15 @@ export default function ScreenProtection() {
               strokeWidth={1.5}
               stroke="currentColor"
               className="w-6 h-6 inline"
-            >
+              >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
+                />
             </svg>
           </button>
+                </Link>
           </div>
         </div>
       </div>
