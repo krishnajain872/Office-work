@@ -7,7 +7,7 @@ import Creatable from 'react-select/creatable';import Select from 'react-select'
 const steps = [
   { link: '/screen-protection', name: "Detail section" },
   { link: "/screen-protection/form", name: "form" },
-  { link: "/book-a-repair/review", name: "Review Details" }
+  { link: "/screen-protection/submit", name: "submit" }
 ]
 const handleContinue = (e) => {
     e.preventDefault()
