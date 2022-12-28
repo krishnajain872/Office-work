@@ -8,13 +8,13 @@ export default function index() {
   return (
     <> 
 
-    <ScreenProtection/>
+    {/* <ScreenProtection/> */}
     <Form/>
 
     </>
   )
 }
 
-index.getLayout = function getLayout(page){
+index.getLayout = function getLayout({page}){
   return <Layout>{page}</Layout>
 }

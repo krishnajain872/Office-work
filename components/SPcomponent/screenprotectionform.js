@@ -7,22 +7,22 @@ import Creatable from 'react-select/creatable';
 import Select from 'react-select';
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setPhoneDetail} from "../../app/store/screenProtectionSlice";
+import { setPhoneDetail } from "../../app/store/screenProtectionSlice";
 import DatePicker from "react-datepicker";
 
- 
+
 export default function Form() {
-   
+
   const options = [{
 
-    brand:{ value: 'Samsung', label: 'Samsung' },
-    model:{ value: 'note123', label: 'note123' },
-    invoiceAmount:{ value: '50000', label: '500000' },
-    Purchase:{value: 'wqeq', label: 'wqe'},
-    iemi:{value: 'vawqe', label: 'qwe'}
+    brand: { value: 'Samsung', label: 'Samsung' },
+    model: { value: 'note123', label: 'note123' },
+    invoiceAmount: { value: '50000', label: '500000' },
+    Purchase: { value: 'wqeq', label: 'wqe' },
+    iemi: { value: 'vawqe', label: 'qwe' }
   }
   ]
-  
+
   const brandRef = useRef(null)
   const modelRef = useRef(null)
   const colorRef = useRef(null)
@@ -38,7 +38,7 @@ export default function Form() {
     const model = modelRef.current?.getValue()[0]?.value
     const color = colorRef.current?.getValue()[0]?.value
     var issues = issuesRef.current?.getValue()
-    const timeSlotId  = timeSlotRef.current?.getValue()[0]?.value
+    const timeSlotId = timeSlotRef.current?.getValue()[0]?.value
   };
   return (
     <>
@@ -52,7 +52,7 @@ export default function Form() {
 
                 ref={brandRef}
                 options={options.brand}
-                onChange={({ value }) =>console.log(value)  }
+                onChange={({ value }) => console.log(value)}
                 placeholder="Select Brand"
                 className="book-form-container"
                 classNamePrefix="book-form"
@@ -60,43 +60,43 @@ export default function Form() {
             </div>
             <div className="col-span-12 md:col-span-6 multiseletform">
               <Creatable
-               ref={brandRef}
-               options={options.brand}
-               onChange={({ value }) =>console.log(value)  }
-               placeholder="Select Brand"
-               className="book-form-container"
-               classNamePrefix="book-form"
+                ref={brandRef}
+                options={options.brand}
+                onChange={({ value }) => console.log(value)}
+                placeholder="Select Brand"
+                className="book-form-container"
+                classNamePrefix="book-form"
               />
             </div>
             <div className="col-span-12 multiseletform">
               <Select
-               ref={brandRef}
-               options={options.brand}
-               onChange={({ value }) =>console.log(value)  }
-               placeholder="Select Brand"
-               className="book-form-container"
-               classNamePrefix="book-form"
+                ref={brandRef}
+                options={options.brand}
+                onChange={({ value }) => console.log(value)}
+                placeholder="Select Brand"
+                className="book-form-container"
+                classNamePrefix="book-form"
               />
             </div>
             <div className="col-span-12 md:col-span-12 multiseletform">
               <Creatable
-               ref={brandRef}
-               options={options.brand}
-               onChange={({ value }) =>console.log(value)  }
-               placeholder="Select Brand"
-               className="book-form-container"
-               classNamePrefix="book-form"
+                ref={brandRef}
+                options={options.brand}
+                onChange={({ value }) => console.log(value)}
+                placeholder="Select Brand"
+                className="book-form-container"
+                classNamePrefix="book-form"
               />
             </div>
-            
+
             <div className="col-span-12 md:col-span-6 multiseletform">
               <Select
-               ref={brandRef}
-               options={options.brand}
-               onChange={({ value }) =>console.log(value)  }
-               placeholder="Select Brand"
-               className="book-form-container"
-               classNamePrefix="book-form"
+                ref={brandRef}
+                options={options.brand}
+                onChange={({ value }) => console.log(value)}
+                placeholder="Select Brand"
+                className="book-form-container"
+                classNamePrefix="book-form"
               />
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function Form() {
   );
 }
 
-Form.getLayout = function  (page) {
-  
+Form.getLayout = function ({ page }) {
+
   return <formLayout>{page}</formLayout>;
 };
 
