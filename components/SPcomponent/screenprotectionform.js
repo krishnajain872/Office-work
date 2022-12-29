@@ -6,6 +6,7 @@ import mobile from "../../app/utils/brands.json";
 import Creatable from 'react-select/creatable';
 import Select from 'react-select';
 import { useRef } from "react";
+import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { setPhoneDetail } from "../../app/store/screenProtectionSlice";
 import DatePicker from "react-datepicker";
@@ -100,36 +101,38 @@ export default function Form() {
               />
             </div>
           </div>
-          <button
-            className="brand-btn"
-            // onsClick={handleContinue}
-            type="submit"
-          >
-            Continue
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 inline"
+          <Link href="/screen-protection/Plan">
+            <button
+              className="brand-btn"
+
+              type="submit"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </button>
+              Continue
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 inline"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </Link>
         </form>
       </div>
     </>
   );
 }
 
-Form.getLayout = function ({ page }) {
+// Form.getLayout = function (page) {
 
-  return <formLayout>{page}</formLayout>;
-};
+//   return <formLayout>{page}</formLayout>;
+// };
 
 
