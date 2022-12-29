@@ -1,7 +1,7 @@
 
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import formLayout from "./spFormLayout";
+import formLayout from "./layouts/spFormLayout";
 import mobile from "../../app/utils/brands.json";
 import Creatable from 'react-select/creatable';
 import Select from 'react-select';
@@ -43,7 +43,7 @@ export default function Form() {
   };
   return (
     <>
-      <h2 className="font-extrabold text-4xl text-[#00000099] mb-8">Protection</h2>
+      <h2 className="font-extrabold text-4xl text-[#00000099] mb-8">Protection Plan</h2>
       <div className="form_group">
 
         <form onSubmit={handleContinue}>
@@ -54,7 +54,7 @@ export default function Form() {
                 ref={brandRef}
                 options={options.brand}
                 onChange={({ value }) => console.log(value)}
-                placeholder="Select Brand"
+                placeholder="Brand"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
@@ -64,17 +64,28 @@ export default function Form() {
                 ref={brandRef}
                 options={options.brand}
                 onChange={({ value }) => console.log(value)}
-                placeholder="Select Brand"
+                placeholder="Model"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
             </div>
-            <div className="col-span-12 multiseletform">
-              <Select
+            <div className="col-span-12 md:col-span-6 multiseletform">
+              <Creatable
+
                 ref={brandRef}
                 options={options.brand}
                 onChange={({ value }) => console.log(value)}
-                placeholder="Select Brand"
+                placeholder="Invoice Amount"
+                className="book-form-container"
+                classNamePrefix="book-form"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 multiseletform">
+              <Creatable
+                ref={brandRef}
+                options={options.brand}
+                onChange={({ value }) => console.log(value)}
+                placeholder="Purchased Date"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
@@ -84,22 +95,13 @@ export default function Form() {
                 ref={brandRef}
                 options={options.brand}
                 onChange={({ value }) => console.log(value)}
-                placeholder="Select Brand"
+                placeholder="Device IMEI"
                 className="book-form-container"
                 classNamePrefix="book-form"
               />
             </div>
 
-            <div className="col-span-12 md:col-span-6 multiseletform">
-              <Select
-                ref={brandRef}
-                options={options.brand}
-                onChange={({ value }) => console.log(value)}
-                placeholder="Select Brand"
-                className="book-form-container"
-                classNamePrefix="book-form"
-              />
-            </div>
+      
           </div>
           <Link href="/screen-protection/Plan">
             <button

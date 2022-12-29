@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from "./../../components/Layout/index";
 import ScreenProtection from "./../../components/SPcomponent/screenProtection"
 import Form from '../../components/SPcomponent/screenprotectionform';
-import FormLayout from '../../components/SPcomponent/spFormLayout';
+import FormLayout from '../../components/SPcomponent/layouts/spFormLayout';
 export default function index() {
 
 	return (

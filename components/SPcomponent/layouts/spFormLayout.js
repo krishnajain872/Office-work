@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
-import Transition from "../transitions";
+import Transition from "../../transitions";
 
 const steps = [
   { link: '/screen-protection-form/form', name: "form" },
@@ -36,7 +36,7 @@ export default function formLayout({ children }) {
                 <p className="hidden lg:block">Payment</p>
               </div>
             </div>
-            <div className="col-span-12 xl:col-span-9 lg:col-span-8 white-glass-repair py-6 md:py-16 px-6 rounded-xl stop_at_point">
+            <div className="col-span-12 xl:col-span-9 lg:col-span-8 white-glass-repair py-6 md:py-20 px-6 rounded-xl stop_at_point">
               <div>{children}</div>
             </div>
           </div>

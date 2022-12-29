@@ -1,12 +1,12 @@
 import React from 'react';
-import Form from '../../components/SPcomponent/screenprotectionform';
-import FormLayout from '../../components/SPcomponent/layouts/spFormLayout';
+import Payment from '../../components/SPcomponent/spPayment';
+import FormLayout from '../../components/SPcomponent/layouts/spPaymentLayout';
 export default function index() {
 
 	return (
 		<>
 			{/* <ScreenProtection/> */}
-			< Form />
+			< Payment />
 		</>
 	)
 }

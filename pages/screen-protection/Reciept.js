@@ -1,12 +1,12 @@
 import React from 'react';
-import Plan from "../../components/spcomponent/spPlans"
-import PlanLayout from '../../components/SPcomponent/layouts/PlanLayout';
+import Reciept from "../../components/spcomponent/spRecipt"
+import PlanLayout from '../../components/SPcomponent/layouts/spRecieptLayout';
 export default function index() {
 
 	return (
 		<>
 			{/* <ScreenProtection/> */}
-			< Plan />
+			< Reciept />
 		</>
 	)
 }
