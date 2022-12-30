@@ -63,8 +63,13 @@ justify-items: end"
           </p>
         </div>
       </div>
+
+      <div className="flex flex-row justify-around pb-6 m-4 flex-wrap">
+        <div className="flex flex-col items-center m-2">
+
       <div className="grid grid-cols-3 justify-items-center p-1 m-2 pb-10 ">
         <div className="flex flex-col items-center">
+
           <img
             alt="image1"
             src="/ScreenProtection/chat.png"
@@ -73,7 +78,11 @@ justify-items: end"
           />
           <p>24/7 Chat Support</p>
         </div>
+
+        <div className="flex flex-col items-center m-2">
+
         <div className="flex flex-col items-center">
+
           <img
             alt="image2"
             src="/ScreenProtection/delivery.png"
@@ -82,7 +91,11 @@ justify-items: end"
           />
           <p>Free Pickup & Delivery</p>
         </div>
+
+        <div className="flex flex-col items-center m-2 ">
+
         <div className="flex flex-col items-center ">
+
           <img
             alt="image3"
             src="/ScreenProtection/service.png"
@@ -93,19 +106,32 @@ justify-items: end"
         </div>
       </div>
       <div className="mb-1 m-4">
+
+        <figure class="md:flex white-glass-repair bg-slate-100 rounded-sm p-2 md:p-0 dark:bg-slate-800  ">
+          <img
+            style={{ top: "-40px", left: "30px" }}
+            class="w-24 h-24  inline rounded-full relative top-0 sm:left-0"
+
         <figure class="md:flex white-glass-repair bg-slate-100 rounded-sm p-2 md:p-0 dark:bg-slate-800 ">
           <img
             class="w-24 h-24  md:rounded-full mx-auto relative top-0 "
             style={{ top: "-40px", left: "30px" }}
+
             src="/test4.webp"
             alt=""
             width="384"
             height="512"
           />
           <div class="pt-6 md:p-3 text-center space-y-4">
+
+            <figcaption class="font-semibold md:text-base md:font-medium">
+              <div
+                class="text-xl flex justify-start ml-7 "
+
             <figcaption class="font-semibold ">
               <div
                 class="text-xl flex justify-start ml-7  "
+
                 style={{ color: "#561E9D", marginTop: "-6px" }}
               >
                 NAME OF THE PERSON
@@ -115,7 +141,11 @@ justify-items: end"
               </div>
             </figcaption>
             <blockquote>
+
+              <p class="text-slate-700  text-start overflow-hidden ">
+
               <p class="text-slate-700  text-start overflow-auto">
+
                 Tailwind CSS is the only framework that I've seen scale on large
                 teams. It’s easy to customize, adapts to any design, and the
                 build size is tiny wqhedquihdiqwhdh qhduiqw

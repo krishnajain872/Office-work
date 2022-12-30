@@ -54,6 +54,32 @@ export default function formLayout({ children }) {
             </div>
             <div className="col-span-12 m-6 ml-10 xl:col-span-9 lg:col-span-8 white-glass-repair py-2 md:py-4 px-6 pl-7  rounded-xl stop_at_point mHeight pt-0 ">
               <div>{children}</div>
+ 
+                    </div>
+                    </div >
+              <div >
+                 
+                <Link href="/screen-protection/Payment">
+                  <button className="brand-btn  " type="submit">
+                    Buy Now
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 inline"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+ 
             </div>
           </div>
         </div>
@@ -77,6 +103,7 @@ export default function formLayout({ children }) {
               </svg>
             </button>
           </Link>
+ 
         </div>
       </div>
     </Transition>
