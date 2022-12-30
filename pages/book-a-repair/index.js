@@ -1,14 +1,12 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import BookRepairLayout from "../../components/Layout/BookRepairLayout";
-import mobile from "../../app/utils/brands.json";
-import issue from "../../app/utils/issues.json";
 import Creatable from 'react-select/creatable';
 import Select from 'react-select';
-import { useGetRepairDataQuery } from "../../app/store/apiSlice";
+// import { useGetRepairDataQuery } from "../../app/store/apiSlice";
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setDetails } from "../../app/store/repairOrederSlice";
+// import { setDetails } from "../../app/store/repairOrederSlice";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 export default function BookARepair({ options }) {
