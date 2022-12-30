@@ -5,7 +5,7 @@ export default function index() {
 
 	return (
 		<>
-			{/* <ScreenProtection/> */}
+ 
 			< Plan />
 		</>
 	)

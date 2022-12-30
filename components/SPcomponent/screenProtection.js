@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import { Router, useRouter } from "next/router";
 import Link from "next/link";
-// const router = useRouter();
-import screenprotectionform from "./screenprotectionform";
+
 const steps = [
-  { link: '/screen-protection/form', name: "Form" },
+  { link: '/screen-protection/form', name: "Form"},
+  { link: '/screen-protection/Plan', name: "Plan"},
+  { link: '/screen-protection/Payment', name: "Payment"},
+  { link: '/screen-protection/Reciept', name: "Reciept"}
 ]
 
 

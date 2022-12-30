@@ -1,7 +1,6 @@
 
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import formLayout from "./layouts/spFormLayout";
 import mobile from "../../app/utils/brands.json";
 import Creatable from 'react-select/creatable';
 import Select from 'react-select';
@@ -9,7 +8,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { setPhoneDetail } from "../../app/store/screenProtectionSlice";
-import DatePicker from "react-datepicker";
+
 
 
 export default function Form() {
@@ -131,10 +130,5 @@ export default function Form() {
     </>
   );
 }
-
-// Form.getLayout = function (page) {
-
-//   return <formLayout>{page}</formLayout>;
-// };
 
 
