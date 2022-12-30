@@ -11,14 +11,11 @@ export default function Plan() {
         className="grid grid-col col-span-4 justify-items-end mt-0 
 justify-items: end"
       >
-        {/* <img alt="image" src="/ScreenProtection/Ellipse.png"  height="100px" width="100px"/>
-         */}
         <div className="bg-slate-100  rounded-full h-28 w-28 flex flex-row-2 justify-around  flex-wrap items-center content-center">
-          
           <h2 class="font-semibold text-2xl" style={{ color: "#561E9D" }}>
-            $ 799 
+            $ 799
           </h2>
-          For 1 Year  
+          For 1 Year
         </div>
       </div>
       <div className="  ">
@@ -31,7 +28,7 @@ justify-items: end"
         </p>
         <div className="mb-2 font-medium text-xl" style={{ color: "#561E9D" }}>
           <p className="mb-2">
-            <svg 
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -44,8 +41,8 @@ justify-items: end"
                 strokeLinejoin="round"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
-            </svg> 
-               One Time Screen Replacement
+            </svg>
+            One Time Screen Replacement
           </p>
           <p className="mb-2">
             <svg
@@ -62,7 +59,7 @@ justify-items: end"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
-              Mobile Screen Protection Plan Cover Any Kind Of Screen Damage
+            Mobile Screen Protection Plan Cover Any Kind Of Screen Damage
           </p>
         </div>
       </div>

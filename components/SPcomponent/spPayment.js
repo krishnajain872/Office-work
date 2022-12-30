@@ -92,7 +92,7 @@ export default function Payment() {
               >
                 I agree with the{" "}
                 <a
-                  href="#"
+                  href="https://laravel.devicecure.in/terms-conditions"
                   class="text-blue-600 dark:text-blue-500 hover:underline "
                   style={{ color: "#561E9D" }}
                 >
