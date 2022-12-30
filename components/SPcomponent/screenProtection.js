@@ -12,12 +12,19 @@ const steps = [
 export default function ScreenProtectioncomp() {
   return (
     <>
+ 
       <div className="grid grid-cols-2 m-14  items-center justify-evenly ">
+      <div className="grid grid-cols-2 m-10  items-center justify-evenly ">
+ 
         <div className="mx-auto">
           <img
             src="/ScreenProtection/sp.png"
             alt="image"
+ 
             width="600px"
+
+            width="700px"
+ 
             height="100px"
           />
         </div>

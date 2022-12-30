@@ -1,603 +1,639 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 @font-face {
-    font-family: barnd_font;
-    src: url(QarantaBold.otf);
+  font-family: barnd_font;
+  src: url(QarantaBold.otf);
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-$primary: #561E9D;
+$primary: #561e9d;
 $primary-70: hsl(264deg 65% 35% / 70%);
 $secondary: #656565;
-$secondary-tint: #F0F0F0;
-$yellow: #FFDA58;
-$green: #60C84F;
-$light-voilet: #E3CDFF;
+$secondary-tint: #f0f0f0;
+$yellow: #ffda58;
+$green: #60c84f;
+$light-voilet: #e3cdff;
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 body {
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
-    background-color: white;
+  background-color: white;
 }
 
 .brand-btn-secondary {
-    background-color: rgba($color: #fff, $alpha: .45);
-    color: white;
-    border-radius: 6px;
-    padding: .8rem 1.5rem;
-    border: none;
-    letter-spacing: 0.05em;
-    transition: all .3s;
+  background-color: rgba($color: #fff, $alpha: 0.45);
+  color: white;
+  border-radius: 6px;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
 
-    &:hover {
-        background-color: rgba($color: #fff, $alpha: .60)
-    }
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: 0.6);
+  }
 }
 
 .brand-btn {
-    text-decoration: none;
-    background: linear-gradient(133deg, #271a60 0%, #923cff 30%, #561e9d 100%);
-    background-size: 500%;
-    border-radius: 6px;
-    padding: .8rem 1.5rem;
-    color: white;
-    border: none;
-    cursor: pointer;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.05em;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    transition: all .3s;
-    -ms-user-select: none;
-    user-select: none;
+  text-decoration: none;
+  background: linear-gradient(133deg, #271a60 0%, #923cff 30%, #561e9d 100%);
+  background-size: 500%;
+  border-radius: 6px;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  transition: all 0.3s;
+  -ms-user-select: none;
+  user-select: none;
 
-    &:hover {
-        background-position: 100%;
-    }
+  &:hover {
+    background-position: 100%;
+  }
 
-    svg {
-        margin-left: 8px;
-        transition: all .3s;
-    }
+  svg {
+    margin-left: 8px;
+    transition: all 0.3s;
+  }
 
-    &:hover>svg {
-        margin-left: 20px;
-        width: 2rem;
-    }
+  &:hover > svg {
+    margin-left: 20px;
+    width: 2rem;
+  }
 }
-@media (max-width: 768px){
-    .brand-btn{
-        padding: .5rem 1rem;
-        font-size: 12px;
-    }
+@media (max-width: 768px) {
+  .brand-btn {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+  }
 }
 /* this area is for navbar  */
 .brand_navbar {
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    box-shadow: 2px 0px 6px 0px #dbdbdb80;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 2px 0px 6px 0px #dbdbdb80;
 }
 
 .nav_link {
-    position: relative;
-    transition: all .3s;
+  position: relative;
+  transition: all 0.3s;
 }
 
 .nav_link::after {
-    content: "";
-    display: block;
-    width: 00%;
-    height: 00%;
-    background: transparent;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-color: transparent;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    transition: all .3s;
-    border-top-right-radius: 4px;
+  content: "";
+  display: block;
+  width: 00%;
+  height: 00%;
+  background: transparent;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: all 0.3s;
+  border-top-right-radius: 4px;
 }
 
 .nav_link::before {
-    content: "";
-    display: block;
-    width: 00%;
-    height: 00%;
-    background: transparent;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    border-color: transparent;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    transition: all .3s;
-    border-bottom-left-radius: 4px;
+  content: "";
+  display: block;
+  width: 00%;
+  height: 00%;
+  background: transparent;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-color: transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s;
+  border-bottom-left-radius: 4px;
 }
 
 .nav_link:hover {
-    color: $primary;
+  color: $primary;
 }
 
 .nav_link:hover::after,
 .nav_link:hover::before {
-    width: 50%;
-    height: 50%;
-    border-color: $primary-70;
+  width: 50%;
+  height: 50%;
+  border-color: $primary-70;
 }
 
 .nav_link.active::before {
-    content: "";
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    background: transparent;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    border-color: $primary-70;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    transition: all .3s;
-    border-radius: 4px !important;
+  content: "";
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-color: $primary-70;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s;
+  border-radius: 4px !important;
 }
 
 .nav_link.active::after {
-    content: "";
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    background: transparent;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-color: $primary-70;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    transition: all .3s;
-    border-radius: 4px !important;
+  content: "";
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-color: $primary-70;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: all 0.3s;
+  border-radius: 4px !important;
 }
-.bottom-nav{
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    box-shadow: -1px 0px 6px 0px #0000002b;
-    @apply lg:hidden z-50 md:py-3 py-2 fixed bottom-0 w-full top-auto;
+.bottom-nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: -1px 0px 6px 0px #0000002b;
+  @apply lg:hidden z-50 md:py-3 py-2 fixed bottom-0 w-full top-auto;
 }
-.selectNone, .choose_card {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.selectNone,
+.choose_card {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-@media(max-width: 768px){
-    .isInfo.service_link{
-        display: none;
-    }
-    .isInfo.info_link{
-        display: flex;
-    }
-    .isService.service_link{
-        display: flex;
-    }
-    .isService.info_link{
-        display: none;
-    }
+@media (max-width: 768px) {
+  .isInfo.service_link {
+    display: none;
+  }
+  .isInfo.info_link {
+    display: flex;
+  }
+  .isService.service_link {
+    display: flex;
+  }
+  .isService.info_link {
+    display: none;
+  }
 }
 /* end here */
 /* this area is for hero section  */
 .brand-heading {
-    color: $secondary;
-    font-size: calc(35px + 2.4vw);
-    text-transform: capitalize;
-    font-weight: 600;
-    letter-spacing: -3px;
-    line-height: calc(35px + 2.4vw);
-    span{
-        text-transform: capitalize;
-        color: $primary;
-        font-family: barnd_font;
-    }
-}
-.offer_sec{
-    box-shadow: 4px 4px 0px 0px #dbdbdb;
-    transition: all .3s;
-    &:hover{
-        box-shadow: 8px 8px 0px 0px $light-voilet;
-    }
-}
-.slider_title {
-    color: $secondary;
-    font-size: calc(15px + 1.2vw);
-    width: 80%;
-    text-transform: capitalize;
-
-    span {
-        font-size: calc(18px + 1.5vw);
-    }
-}
-.textimonial .slider_title {
-    color: white !important;
-
-    span {
-        color: white;
-    }
-}
-.slider_title span {
+  color: $secondary;
+  font-size: calc(35px + 2.4vw);
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: -3px;
+  line-height: calc(35px + 2.4vw);
+  span {
     text-transform: capitalize;
     color: $primary;
     font-family: barnd_font;
+  }
 }
+.offer_sec {
+  box-shadow: 4px 4px 0px 0px #dbdbdb;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 8px 8px 0px 0px $light-voilet;
+  }
+}
+.slider_title {
+  color: $secondary;
+  font-size: calc(15px + 1.2vw);
+  width: 80%;
+  text-transform: capitalize;
 
+  span {
+    font-size: calc(18px + 1.5vw);
+  }
+}
+.textimonial .slider_title {
+  color: white !important;
+
+  span {
+    color: white;
+  }
+}
+.slider_title span {
+  text-transform: capitalize;
+  color: $primary;
+  font-family: barnd_font;
+}
 
 /* end here  */
 /* this area is for banner section  */
 .options {
-    display: flex;
-    // flex-direction: row;
-    // align-items: stretch;
-    // overflow: hidden;
-    width: 100%;
-    height: 100%;
-    min-height: calc(70px + 20vw);
-    height: auto;
-    max-height: 300px;
-    
-    .option {
-        position: relative;
-        overflow: hidden;
-        min-width: calc(15px + 1.85vw);
-        margin: 0px 10px;
+  display: flex;
+  // flex-direction: row;
+  // align-items: stretch;
+  // overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: calc(70px + 20vw);
+  height: auto;
+  max-height: 300px;
 
-        @media(max-width: 450px) {
-            margin: 0px 4px;
-        }
+  .option {
+    position: relative;
+    overflow: hidden;
+    min-width: calc(15px + 1.85vw);
+    margin: 0px 10px;
 
-        background-position: center;
-        cursor: pointer;
-        transition: all .5s;
-        &.active {
-            flex-grow: 10;
-            border-radius: calc(6px + .5vw);
-        }
-        &:not(.active) {
-            flex-grow: 1;
-            border-radius: calc(6px + .5vw);
-        }
+    @media (max-width: 450px) {
+      margin: 0px 4px;
     }
+
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    &.active {
+      flex-grow: 10;
+      border-radius: calc(6px + 0.5vw);
+    }
+    &:not(.active) {
+      flex-grow: 1;
+      border-radius: calc(6px + 0.5vw);
+    }
+  }
 }
 
 /* end here  */
-// this area is for footer 
+// this area is for footer
 footer {
-    background-image: url('../public/footer-bg.png');
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-    background-size: cover;
-    height: 100%;
+  background-image: url("../public/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: cover;
+  height: 100%;
 }
 
 .footer_col {
-    background-color: rgba($color: #fff, $alpha: 0.5);
-    backdrop-filter: blur(12px);
-    border-radius: 28px;
-    border: 0.8px solid rgba($color: $primary, $alpha: 0.3);
-    box-shadow: 5px 5px 0px 0px $primary;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  border: 0.8px solid rgba($color: $primary, $alpha: 0.3);
+  box-shadow: 5px 5px 0px 0px $primary;
 }
 
 .f-heading {
-    font-family: barnd_font;
+  font-family: barnd_font;
 }
 
-// end here 
-// this area is for slick arrows 
+// end here
+// this area is for slick arrows
 .slick-arrow {
-    transform: translate(0, -100%);
-    top: -3rem !important;
+  transform: translate(0, -100%);
+  top: -3rem !important;
 
-    @media(max-width:768px) {
-        top: -2rem !important;
-    }
+  @media (max-width: 768px) {
+    top: -2rem !important;
+  }
 }
 
 .slick-prev {
-    left: inherit !important;
-    right: 40px !important;
+  left: inherit !important;
+  right: 40px !important;
 
-    @media(max-width: 768px) {
-        right: 20px !important;
-
-        &::after {
-            width: 15px !important;
-            height: 15px !important;
-        }
-    }
-
-    &::before {
-        display: none;
-    }
+  @media (max-width: 768px) {
+    right: 20px !important;
 
     &::after {
-        content: '';
-        width: 25px;
-        height: 25px;
-        transform: rotate(180deg);
-        filter: grayscale(100%);
-        opacity: .5;
-        display: block;
-        background: url(../public/arrow-right.svg)no-repeat center center/contain;
-        transition: all .1s;
+      width: 15px !important;
+      height: 15px !important;
     }
+  }
 
-    &:hover::after {
-        opacity: 1;
-        filter: grayscale(0%);
-    }
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
+    filter: grayscale(100%);
+    opacity: 0.5;
+    display: block;
+    background: url(../public/arrow-right.svg) no-repeat center center/contain;
+    transition: all 0.1s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
 }
 
 .slick-next {
+  right: 0px !important;
+
+  @media (max-width: 768px) {
     right: 0px !important;
 
-    @media(max-width: 768px) {
-        right: 0px !important;
-
-        &::after {
-            width: 15px !important;
-            height: 15px !important;
-        }
-    }
-
-    &::before {
-        display: none;
-    }
-
     &::after {
-        content: '';
-        width: 25px;
-        height: 25px;
-        filter: grayscale(100%);
-        display: block;
-        opacity: .5;
-        background: url(../public/arrow-right.svg)no-repeat center center/contain;
-        transition: all .1s;
+      width: 15px !important;
+      height: 15px !important;
     }
+  }
 
-    &:hover::after {
-        opacity: 1;
-        filter: grayscale(0%);
-    }
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    filter: grayscale(100%);
+    display: block;
+    opacity: 0.5;
+    background: url(../public/arrow-right.svg) no-repeat center center/contain;
+    transition: all 0.1s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
 }
 
 .textimonial .slick-next {
-    &::after {
-        filter: grayscale(100%) invert(100%);
-    }
+  &::after {
+    filter: grayscale(100%) invert(100%);
+  }
 
-    &:hover::after {
-        filter: grayscale(100%) invert(100%);
-    }
+  &:hover::after {
+    filter: grayscale(100%) invert(100%);
+  }
 }
 
 .textimonial .slick-prev {
-    &::after {
-        filter: grayscale(100%) invert(100%);
-    }
+  &::after {
+    filter: grayscale(100%) invert(100%);
+  }
 
-    &:hover::after {
-        filter: grayscale(100%) invert(100%);
-    }
+  &:hover::after {
+    filter: grayscale(100%) invert(100%);
+  }
 }
 
-// end here 
-// this area is for testmonial section 
+// end here
+// this area is for testmonial section
 .textimonial {
-    background: url('../public/testi.webp')no-repeat center center/cover;
-    background-attachment: fixed;
-    width: 100%;
+  background: url("../public/testi.webp") no-repeat center center/cover;
+  background-attachment: fixed;
+  width: 100%;
 }
-.testi_box{
-    img{
-        filter: grayscale(1);
-        object-fit: cover;
-        object-position: center;
-        transition: all .3s;
-    }
-    &:hover img{
-        filter: grayscale(0);
-    }
+.testi_box {
+  img {
+    filter: grayscale(1);
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s;
+  }
+  &:hover img {
+    filter: grayscale(0);
+  }
 }
-.testioverlay{
-    background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.7));
+.testioverlay {
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.7));
 }
-// end here 
-// this area is for brands section 
+// end here
+// this area is for brands section
 .brands {
-    .slick-list {
-        box-shadow: 0px 0px 10px 0px rgba($color: $secondary, $alpha: 0.2) !important;
-        border-radius: 24px;
-        padding: 5px 20px !important;
+  .slick-list {
+    box-shadow: 0px 0px 10px 0px rgba($color: $secondary, $alpha: 0.2) !important;
+    border-radius: 24px;
+    padding: 5px 20px !important;
 
-        @media(max-width: 768px) {
-            padding: 0px 10px !important;
-        }
+    @media (max-width: 768px) {
+      padding: 0px 10px !important;
     }
+  }
 }
 
-// end here 
-// this area is for auth section 
+// end here
+// this area is for auth section
 .authBg {
-    width: 100%;
-    min-height: 100vh;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .white-glass {
-    background-color: rgba($color: #fff, $alpha: .45);
-    backdrop-filter: blur(6px);
+  background-color: rgba($color: #fff, $alpha: 0.45);
+  backdrop-filter: blur(6px);
 }
 
 .white-glass-repair {
-    background: linear-gradient(111.68deg, rgba(255, 255, 255, 0.29) 7.59%, rgba(255, 255, 255, 0.39) 102.04%);
-    border: 3.5636px solid rgba(255, 255, 255, 0.28);
-    backdrop-filter: blur(13.0665px);
-    border-radius: 21.3816px;
-    
-    .white-glass {
-        background: rgba(255, 255, 255, 0.37);
-        backdrop-filter: blur(0px);
-    }
-    &.error{
-        background: linear-gradient(90deg, rgb(255 134 134 / 88%) 7.59%, rgba(255, 255, 255, 0.39) 102.04%);
-        border-radius: 8px;
-        border-width: 0px;
+  background: linear-gradient(
+    111.68deg,
+    rgba(255, 255, 255, 0.29) 7.59%,
+    rgba(255, 255, 255, 0.39) 102.04%
+  );
+  border: 3.5636px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(13.0665px);
+  border-radius: 21.3816px;
 
-    }
+  .white-glass {
+    background: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(0px);
+  }
+  &.error {
+    background: linear-gradient(
+      90deg,
+      rgb(255 134 134 / 88%) 7.59%,
+      rgba(255, 255, 255, 0.39) 102.04%
+    );
+    border-radius: 8px;
+    border-width: 0px;
+  }
 }
 
 .black-glass-repair {
-    background: rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    border-radius: 8px;
-    color: white;
-    &:focus{
-        border: none;
-        outline: none;
-        box-shadow: none;
-    }
-    &::-webkit-calendar-picker-indicator{
-        filter: invert(1);
-    }
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
 }
 
 .black-glass {
-    background-color: rgba($color: #000000, $alpha: .20);
-    backdrop-filter: blur(6px);
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  backdrop-filter: blur(6px);
 }
 
 .traplace {
-    ::placeholder {
-        color: rgba($color: #fff, $alpha: .50);
-        opacity: 1;
-    }
+  ::placeholder {
+    color: rgba($color: #fff, $alpha: 0.5);
+    opacity: 1;
+  }
 
-    :-ms-input-placeholder {
-        color: rgba($color: #fff, $alpha: .50);
-    }
+  :-ms-input-placeholder {
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
 
-    ::-ms-input-placeholder {
-        color: rgba($color: #fff, $alpha: .50);
-    }
+  ::-ms-input-placeholder {
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-// end here 
-// this area is for book a repair 
+// end here
+// this area is for book a repair
 .book_a_repair_bg {
-    background: url("../public/book_a_repair_bg.webp")no-repeat center center/cover;
-    width: 100%;
-    min-height: 100vh;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: url("../public/book_a_repair_bg.webp") no-repeat center
+    center/cover;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp_bg {
+  background: url("../public/ScreenProtection/spformbg.webp") no-repeat center
+    center/cover;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .step {
-    position: relative;
+  position: relative;
 
-    p {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        color: white;
-        align-items: center;
-        background: rgba($color: #fff, $alpha: 0.3);
-        backdrop-filter: blur(4px);
-        margin-right: 20px;
-        z-index: 10;
-    }
+  p {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background: rgba($color: #fff, $alpha: 0.3);
+    backdrop-filter: blur(4px);
+    margin-right: 20px;
+    z-index: 10;
+  }
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: -5px;
-        left: -5px;
-        background: $yellow;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        z-index: -1;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: $yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: -1;
+  }
 
-    &.Complete::before {
-        background: $green;
-    }
+  &.Complete::before {
+    background: $green;
+  }
 
-    &.active::before {
-        background: $light-voilet;
-    }
+  &.active::before {
+    background: $light-voilet;
+  }
 }
 
 .stop_at_point {
-    max-height: 600px;
-    overflow-y: scroll;
-    min-height: 400px;
-    /* width */
-    &::-webkit-scrollbar {
-        width: 25px;
-    }
-    /* Track */
-    &::-webkit-scrollbar-track {
-        background: #ffffff00;
-    }
+  max-height: 600px;
+  overflow-y: scroll;
+  min-height: 400px;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 25px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
 
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-        background-color: #ffffff7c;
-        border: 8px solid transparent;
-        border-radius: 10rem;
-        background-clip: content-box;
-        transition: all .2s;
-    }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffffff7c;
+    border: 8px solid transparent;
+    border-radius: 10rem;
+    background-clip: content-box;
+    transition: all 0.2s;
+  }
 
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-        background-color: #ffffffa4;
-        border: 8px solid transparent;
-        border-radius: 10rem;
-        background-clip: content-box;
-    }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffffa4;
+    border: 8px solid transparent;
+    border-radius: 10rem;
+    background-clip: content-box;
+  }
 }
+
+// Krishna  jain CSS 
+.mHeight{
+  
+  margin-top: 0.5rem;
+  padding-right: 10px;
+  max-height: 830px;
+  margin-left: 4rem;
+  margin-right: 12rem;
+}
+
+.mt-30K{
+  margin-top: 6rem;
+
+}
+ 
+//krishna jain  css end 
 
 
 // Krishna  jain CSS 
@@ -632,198 +668,206 @@ input[type=number] {
 
 
 .backblur {
-    backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
 }
-.book-form__control{
-    background-color: rgba($color: #000000, $alpha: .25) !important;
-    border: none !important;
-    border-radius: 8px !important;
-    padding: 10px 10px;
-    box-shadow: none !important;
+.book-form__control {
+  background-color: rgba($color: #000000, $alpha: 0.25) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 10px;
+  box-shadow: none !important;
 }
-.book-form__menu{
-    background-color: rgba($color: #fff, $alpha: .80) !important;
-    border: none !important;
-    z-index: 999;
-    backdrop-filter: blur(12px);
+.book-form__menu {
+  background-color: rgba($color: #fff, $alpha: 0.8) !important;
+  border: none !important;
+  z-index: 999;
+  backdrop-filter: blur(12px);
 }
-.book-form__option:hover{
-    background-color: $light-voilet;
-    color: $primary !important;
+.book-form__option:hover {
+  background-color: $light-voilet;
+  color: $primary !important;
 }
-.book-form__placeholder{
-    color: rgba($color: #fff, $alpha: 1.0) !important;
+.book-form__placeholder {
+  color: rgba($color: #fff, $alpha: 1) !important;
 }
-.book-form__indicator, .book-form__input-container, .book-form__single-value{
-    color: white !important;
+.book-form__indicator,
+.book-form__input-container,
+.book-form__single-value {
+  color: white !important;
 }
-.book-form__multi-value{
-    background-color: white !important;
-    border-radius: 6px !important;
+.book-form__multi-value {
+  background-color: white !important;
+  border-radius: 6px !important;
 }
-// end here 
-// end here 
-// this area is for why choose section 
+// end here
+// end here
+// this area is for why choose section
 .choose_card {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover .rounded-gray {
-        background-color: $primary;
+  &:hover .rounded-gray {
+    background-color: $primary;
+  }
+
+  &:hover .rounded-gray img {
+    filter: invert(1);
+    opacity: 1;
+  }
+
+  &:hover h4 {
+    color: $primary;
+  }
+
+  .rounded-gray {
+    background-color: $secondary-tint;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    img {
+      opacity: 0.4;
+      transition: all 0.3s;
     }
+  }
 
-    &:hover .rounded-gray img {
-        filter: invert(1);
-        opacity: 1;
-    }
-
-    &:hover h4 {
-        color: $primary;
-    }
-
-    .rounded-gray {
-        background-color: $secondary-tint;
-        transition: all .3s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-
-        img {
-            opacity: .4;
-            transition: all .3s;
-        }
-    }
-
-    h4 {
-        color: $secondary;
-        transition: all .3s;
-        font-size: calc(15px + 1.2vw);
-
-    }
+  h4 {
+    color: $secondary;
+    transition: all 0.3s;
+    font-size: calc(15px + 1.2vw);
+  }
 }
-.choose_card{
-    .why_text {
-            width: 100%;
-            transform: rotate(0deg);
-            animation-name: rotate_why;
-            filter: grayscale(100%);
-            transition: all .3s;
-            opacity: 0.7;
-            animation-duration: 8s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-        }
-        @keyframes rotate_why {
-            0%{
-                transform: rotate(0deg);
-            }100%{
-                transform: rotate(-360deg);
-            }
-        }
-    .why_icon {
-        position: absolute;
-        top: 50%;
-        width: 40%;
-        filter: grayscale(100%);
-        opacity: 0.7;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        transition: all .3s;
+.choose_card {
+  .why_text {
+    width: 100%;
+    transform: rotate(0deg);
+    animation-name: rotate_why;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    opacity: 0.7;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  @keyframes rotate_why {
+    0% {
+      transform: rotate(0deg);
     }
-    &:hover .why_text{
-        animation-play-state: paused;
-        filter: grayscale(0%);
-        opacity: 1;
+    100% {
+      transform: rotate(-360deg);
     }
-    &:hover .why_icon{
-        filter: grayscale(0%);
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1.18);
-    }
+  }
+  .why_icon {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s;
+  }
+  &:hover .why_text {
+    animation-play-state: paused;
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  &:hover .why_icon {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.18);
+  }
 }
-.choose_card:hover{
-
+.choose_card:hover {
 }
 
 .glassy-backdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-// end here 
-// this area is for otp field 
-.otp_field{
-    div {
-        input{
-            background-color: transparent !important;
-            border-bottom: 2px solid white !important;
-            color: white;
-            text-align: center;
-            &:focus{
-                outline: none;
-            }
-        }
+// end here
+// this area is for otp field
+.otp_field {
+  div {
+    input {
+      background-color: transparent !important;
+      border-bottom: 2px solid white !important;
+      color: white;
+      text-align: center;
+      &:focus {
+        outline: none;
+      }
     }
+  }
 }
-// end here 
-// this area is for about section 
-.simple-col{
-    p{
-        margin-bottom: 20px;
-        line-height: 2rem;
-        letter-spacing: 1.5px;
-    }
+// end here
+// this area is for about section
+.simple-col {
+  p {
+    margin-bottom: 20px;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+  }
 }
-// end here 
+// end here
 // this area is for datePicker
-.react-datepicker{
-    background-color: #4a4a4a99 !important;
-    backdrop-filter: blur(6px) !important;
-    overflow: hidden;
-    border: none !important;
-    border-radius: 12px !important;
-    user-select: none;
-    padding: 16px;
-    font-family: 'Poppins', sans-serif !important;
+.react-datepicker {
+  background-color: #4a4a4a99 !important;
+  backdrop-filter: blur(6px) !important;
+  overflow: hidden;
+  border: none !important;
+  border-radius: 12px !important;
+  user-select: none;
+  padding: 16px;
+  font-family: "Poppins", sans-serif !important;
 }
-.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header{
-    color: white !important;
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: white !important;
 }
-.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
-    color: white !important;
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: white !important;
 }
-.react-datepicker__day--disabled, .react-datepicker__month-text--disabled, .react-datepicker__quarter-text--disabled, .react-datepicker__year-text--disabled{
-    color: #0000009c !important;
+.react-datepicker__day--disabled,
+.react-datepicker__month-text--disabled,
+.react-datepicker__quarter-text--disabled,
+.react-datepicker__year-text--disabled {
+  color: #0000009c !important;
 }
-.react-datepicker__day--selected{
-    border-radius: 50% !important;
-    background-color: white !important;
-    color: black !important;
+.react-datepicker__day--selected {
+  border-radius: 50% !important;
+  background-color: white !important;
+  color: black !important;
 }
-.react-datepicker__navigation{
-    top: 22px !important;
+.react-datepicker__navigation {
+  top: 22px !important;
 }
-.react-datepicker__navigation--previous{
-    left: 18px !important;
+.react-datepicker__navigation--previous {
+  left: 18px !important;
 }
-.react-datepicker__navigation--next{
-    right: 18px !important;
+.react-datepicker__navigation--next {
+  right: 18px !important;
 }
-.react-datepicker__day:hover{
-    background-color: #ffffff75 !important;
-    border-radius: 50%!important;
+.react-datepicker__day:hover {
+  background-color: #ffffff75 !important;
+  border-radius: 50% !important;
 }
 .react-datepicker__header {
-    background-color: transparent !important;
-    border: none !important;
+  background-color: transparent !important;
+  border: none !important;
 }
-.react-datepicker__triangle{
-    display: none !important;
+.react-datepicker__triangle {
+  display: none !important;
 }
-// end here 
+// end here
