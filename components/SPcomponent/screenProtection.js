@@ -12,30 +12,23 @@ const steps = [
 export default function ScreenProtectioncomp() {
   return (
     <>
- 
-      <div className="grid grid-cols-2 m-14  items-center justify-evenly ">
-      <div className="grid grid-cols-2 m-10  items-center justify-evenly ">
- 
-        <div className="mx-auto">
+      <div className="flex flex-row flex-wrap gap-x-3 items-center justify-evenly content-center m-10 ">
+        <div className="xl:ml-48 xl:mr-28  2xl:ml-auto 2xl:mr-28    mx-10 ">
           <img
             src="/ScreenProtection/sp.png"
             alt="image"
- 
-            width="600px"
-
-            width="700px"
- 
+            width="630px"
             height="100px"
           />
         </div>
-        <div className="m-4 text-slate-600 mb-10">
-          <div className="mb-4  relative right-28">
-            <h2 className="slider_title ">
-              WHY <span>DEVICECURE</span>
+        <div className=" text-slate-600 mb-6 my-10 mx-6 xl:mr-auto   xl:ml-34">
+          <div className="mb-4  static xl:relative    xl:right-28 ">
+            <h2 className="slider_title m-0 ">
+              WHY <span className="animate-pulse animation-delay-3000 ">DEVICECURE</span>
             </h2>
             <div className="flex flex-1 font-light">
-              <div className="flex flex-row ">
-                <div className="flex flex-row m-2 ">
+              <div className="flex flex-row flex-wrap">
+                <div className="flex flex-row flex-wrap m-2 ">
                   <img
                     className="m-2  "
                     width="60px"
@@ -52,7 +45,7 @@ export default function ScreenProtectioncomp() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-row">
+                <div className="flex flex-row flex-wrap">
                   <img
                     className="m-2 mb-3"
                     src="/ScreenProtection/image8.svg"
@@ -74,11 +67,11 @@ export default function ScreenProtectioncomp() {
           </div>
           <div className="mt-10 ">
             <div className="slider_title inline ">
-              WHAT'S NOT <span>COVERED</span>
+              WHAT'S NOT <span className="animate-pulse animation-delay-1000">COVERED</span>
             </div>
             <div className="flex flex-1 font-light ">
-              <div className="flex flex-row">
-                <div className="flex flex-row">
+              <div className="flex flex-row flex-wrap">
+                <div className="flex flex-row flex-wrap">
                   <img
                     className="m-2"
                     width="70px"
@@ -115,9 +108,9 @@ export default function ScreenProtectioncomp() {
                 </div>
               </div>
             </div>
-            <div className="row-end-3" >
+            <div className="row-end-3 xl:relative -left-32" >
               <Link  href="/screen-protection/Form">
-                <button className="brand-btn m-14 ml-0 ">
+                <button className="brand-btn m-14 ml-0 animate-bounce ">
                   See Details
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

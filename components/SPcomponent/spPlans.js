@@ -27,7 +27,7 @@ justify-items: end"
           Best Plan For Secure Your Mobile Screen
         </p>
         <div className="mb-2 font-medium text-xl" style={{ color: "#561E9D" }}>
-          <p className="mb-2">
+          <p className="mb-2 sm:ml-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -44,7 +44,7 @@ justify-items: end"
             </svg>
             One Time Screen Replacement
           </p>
-          <p className="mb-2">
+          <p className="mb-2 sm:ml-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -59,17 +59,14 @@ justify-items: end"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
+           <span className="">
             Mobile Screen Protection Plan Cover Any Kind Of Screen Damage
+            </span>
           </p>
         </div>
       </div>
-
-      <div className="flex flex-row justify-around pb-6 m-4 flex-wrap">
+      <div className="flex flex-row justify-around pb-6 m-4 flex-wrap ">
         <div className="flex flex-col items-center m-2">
-
-      <div className="grid grid-cols-3 justify-items-center p-1 m-2 pb-10 ">
-        <div className="flex flex-col items-center">
-
           <img
             alt="image1"
             src="/ScreenProtection/chat.png"
@@ -78,11 +75,7 @@ justify-items: end"
           />
           <p>24/7 Chat Support</p>
         </div>
-
         <div className="flex flex-col items-center m-2">
-
-        <div className="flex flex-col items-center">
-
           <img
             alt="image2"
             src="/ScreenProtection/delivery.png"
@@ -91,11 +84,7 @@ justify-items: end"
           />
           <p>Free Pickup & Delivery</p>
         </div>
-
         <div className="flex flex-col items-center m-2 ">
-
-        <div className="flex flex-col items-center ">
-
           <img
             alt="image3"
             src="/ScreenProtection/service.png"
@@ -106,32 +95,19 @@ justify-items: end"
         </div>
       </div>
       <div className="mb-1 m-4">
-
         <figure class="md:flex white-glass-repair bg-slate-100 rounded-sm p-2 md:p-0 dark:bg-slate-800  ">
           <img
             style={{ top: "-40px", left: "30px" }}
             class="w-24 h-24  inline rounded-full relative top-0 sm:left-0"
-
-        <figure class="md:flex white-glass-repair bg-slate-100 rounded-sm p-2 md:p-0 dark:bg-slate-800 ">
-          <img
-            class="w-24 h-24  md:rounded-full mx-auto relative top-0 "
-            style={{ top: "-40px", left: "30px" }}
-
             src="/test4.webp"
             alt=""
             width="384"
             height="512"
           />
           <div class="pt-6 md:p-3 text-center space-y-4">
-
             <figcaption class="font-semibold md:text-base md:font-medium">
               <div
                 class="text-xl flex justify-start ml-7 "
-
-            <figcaption class="font-semibold ">
-              <div
-                class="text-xl flex justify-start ml-7  "
-
                 style={{ color: "#561E9D", marginTop: "-6px" }}
               >
                 NAME OF THE PERSON
@@ -141,11 +117,7 @@ justify-items: end"
               </div>
             </figcaption>
             <blockquote>
-
-              <p class="text-slate-700  text-start overflow-hidden ">
-
-              <p class="text-slate-700  text-start overflow-auto">
-
+              <p className="text-slate-700  text-start overflow-y-scroll scrollbar-hide h-24 ">
                 Tailwind CSS is the only framework that I've seen scale on large
                 teams. It’s easy to customize, adapts to any design, and the
                 build size is tiny wqhedquihdiqwhdh qhduiqw
