@@ -24,7 +24,7 @@ export default function formLayout({ children }) {
                 className="block md:hidden w-60 mx-auto mb-6"
               />
             </a>
-            <div className="col-span-12 xl:col-span-3 lg:col-span-4 white-glass-repair pt-6 pb-6 lg:pb-2 lg:py-16 px-6 rounded-xl flex lg:flex-col  items-center justify-between stop_at_point mt-30K">
+            <div className="col-span-12 xl:col-span-3 lg:col-span-4 white-glass-repair pt-6 pb-6 lg:pb-2 lg:py-16 px-6 rounded-xl flex lg:flex-col  items-center justify-between h-5/6 mt-16 mb-10">
               <Link href="/" className="hidden  lg:block">
                 <img
                   src="/logo_full_land.png"
@@ -52,9 +52,8 @@ export default function formLayout({ children }) {
                 <p className="hidden lg:block">Payment</p>
               </div>
             </div>
-            <div className="col-span-12 m-6 ml-10 xl:col-span-9 lg:col-span-8 white-glass-repair py-2 md:py-4 px-6 pl-7  rounded-xl stop_at_point mHeight pt-0 ">
+            <div className="scrollbar-hide  col-span-12 m-6 ml-10 xl:col-span-9 lg:col-span-8 white-glass-repair py-2 md:pb-4 px-6 pl-7  rounded-xl stop_at_point mHeight  mr-10 pt-1 " >
               <div>{children}</div>
- 
                     </div>
                     </div >
               <div >
@@ -79,31 +78,6 @@ export default function formLayout({ children }) {
                   </button>
                 </Link>
               </div>
- 
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-14">
-          <Link href="/screen-protection/Payment">
-            <button className="brand-btn  " type="submit">
-              Buy Now
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 inline"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </button>
-          </Link>
- 
         </div>
       </div>
     </Transition>

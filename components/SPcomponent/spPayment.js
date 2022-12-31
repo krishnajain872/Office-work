@@ -107,7 +107,7 @@ export default function Payment() {
             </div>
           </div>
           <Link href="/screen-protection/Reciept">
-            <button className="brand-btn" type="submit">
+            <button className="brand-btn animate-bounce animation-delay-1000" type="submit">
               Proceed To Payment
               <svg
                 xmlns="http://www.w3.org/2000/svg"

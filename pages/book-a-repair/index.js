@@ -30,18 +30,18 @@ export default function BookARepair({ options }) {
     const model = modelRef.current?.getValue()[0]?.value
     const color = colorRef.current?.getValue()[0]?.value
     var issues = issuesRef.current?.getValue()
-    const timeSlotId = timeSlotRef.current?.getValue()[0]?.value
-
-
-    if (!(brand && model && color && issues?.length > 0 && timeSlotId)) return alert("Please enter all fields")
-    issues = issues.map(i => i.value)
+    const timeSlotId  = timeSlotRef.current?.getValue()[0]?.value
+    
+    
+    if(!(brand && model && color && issues?.length>0 && timeSlotId)) return alert("Please enter all fields")
+    issues = issues.map(i=>i.value)
     dispatch(setDetails({
       mobile: {
         brand, model, color
       },
       issues,
       timeSlotId,
-      repairDate: JSON.stringify(startDate).split("T")[0]
+      repairDate:JSON.stringify(startDate).split("T")[0]
     }))
     router.replace("/book-a-repair/address")
 
@@ -52,7 +52,7 @@ export default function BookARepair({ options }) {
   // this area is  for datepicker 
   const [startDate, setStartDate] = useState(new Date());
   const holidays = [
-    new Date(26, 12, 2022),
+    new Date (26, 12, 2022),
   ];
   const minDate = new Date();
   const maxDate = new Date(new Date().setDate(new Date().getDate() + 7))
@@ -105,7 +105,7 @@ export default function BookARepair({ options }) {
             </div>
             <div className="col-span-12 md:col-span-6 multiseletform relative">
               {/* <input type="date" name="" className="w-full black-glass-repair" id="" /> */}
-              <DatePicker selected={startDate} placeholderText="Enter Date" className="w-full black-glass-repair" onChange={(date = new Date()) => setStartDate(date)} minDate={minDate} maxDate={maxDate} excludeDates={[new Date("Dec 26, 2022")]} dateFormat="MMMM d, yyyy" />
+              <DatePicker selected={startDate} placeholderText="Enter Date" className="w-full black-glass-repair" onChange={(date = new Date()) => setStartDate(date)} minDate={minDate} maxDate={maxDate} excludeDates={[new Date("Dec 26, 2022")]}  dateFormat="MMMM d, yyyy"  />
             </div>
             <div className="col-span-12 md:col-span-6 multiseletform">
               <Select
@@ -119,7 +119,7 @@ export default function BookARepair({ options }) {
           </div>
           <button
             className="brand-btn"
-            
+            // onClick={handleContinue}
             type="submit"
           >
             Continue
