@@ -620,6 +620,38 @@ input[type="number"] {
 
 
 
+
+// Krishna  jain CSS 
+.mHeight{
+  
+    // margin-top: 0.5rem;
+    // padding-right: 10px;
+    max-height: 830px;
+    // margin-left: 4rem;
+    // margin-right: 12rem;
+  }
+  
+  .mt-30K{
+    margin-top: 6rem;
+  
+  }
+  // krishna jain 
+.sp_bg {
+    background: url("../public/ScreenProtection/spformbg.webp") no-repeat center
+      center/cover;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  //krishna jain  css end 
+
+
+
+
 .backblur {
   backdrop-filter: blur(40px);
 }
