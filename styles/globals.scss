@@ -569,6 +569,7 @@ input[type=number] {
 }
 
 .stop_at_point {
+ 
     max-height: 600px;
     overflow-y: scroll;
     min-height: 400px;
@@ -598,6 +599,39 @@ input[type=number] {
         background-clip: content-box;
     }
 }
+ 
+  max-height: 600px;
+  overflow-y: scroll;
+  min-height: 400px;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 25px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffffff7c;
+    border: 8px solid transparent;
+    border-radius: 10rem;
+    background-clip: content-box;
+    transition: all 0.2s;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffffa4;
+    border: 8px solid transparent;
+    border-radius: 10rem;
+    background-clip: content-box;
+  }
+}
+
+
+ 
 
 
 // Krishna  jain CSS 
