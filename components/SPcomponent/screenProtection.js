@@ -12,7 +12,7 @@ const steps = [
 export default function ScreenProtectioncomp() {
   return (
     <>
-      <div className="flex flex-row flex-wrap gap-x-3 items-center justify-evenly content-center m-10 ">
+      <div className="flex flex-row flex-wrap gap-x-3 items-center justify-evenly content-center m-10  lg:flex-nowrap">
         <div className="xl:ml-48 xl:mr-28  2xl:ml-auto 2xl:mr-28    mx-10 ">
           <img
             src="/ScreenProtection/sp.png"
@@ -21,8 +21,8 @@ export default function ScreenProtectioncomp() {
             height="100px"
           />
         </div>
-        <div className=" text-slate-600 mb-6 my-10 mx-6 xl:mr-auto   xl:ml-34">
-          <div className="mb-4  static xl:relative    xl:right-28 ">
+        <div className=" text-slate-600 mb-6 my-10 mx-6 xl:mr-auto   xl:ml-34 ">
+          <div className="mb-4  static xl:relative xl:right-28 lg:static">
             <h2 className="slider_title m-0 ">
               WHY <span className="animate-pulse animation-delay-3000 ">DEVICECURE</span>
             </h2>
@@ -38,7 +38,7 @@ export default function ScreenProtectioncomp() {
                   />
                   <div className="flex flex-col ">
                     <h3 className="m-2 mb-0 text-lg font-medium">
-                      DOORSTEP SERVICES 
+                      DOORSTEP SERVICES
                     </h3>
                     <p className="m-2 mt-0 text-sm w-48">
                       Pick Up & Delivery Right At Your Doostep
@@ -109,7 +109,7 @@ export default function ScreenProtectioncomp() {
               </div>
             </div>
             <div className="row-end-3 xl:relative -left-32" >
-              <Link  href="/screen-protection/Form">
+              <Link href="/screen-protection/Form">
                 <button className="brand-btn m-14 ml-0 animate-bounce ">
                   See Details
                   <svg
